@@ -1,0 +1,119 @@
+body{
+    background-color: #212529;
+}
+.bg-light-dark{
+    background-color: #2B3035;
+}
+#root{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+.logo-text {
+  font-family: Arial, sans-serif;
+  font-size: 2.5vw;
+  font-weight: bold;
+  background: linear-gradient(to right, #3498db, #f1c40f); /* linear gradient background */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 0;
+  animation: logo-anim 2s infinite;
+}
+
+@keyframes logo-anim {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  80% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
+
+.logo-text:hover {
+  animation: logo-anim-hover 0.5s infinite;
+}
+
+@keyframes logo-anim-hover {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.login-button, .register-button {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.login-button:hover, .register-button:hover {
+  background-color: #2ecc71;
+}
+
+.login-button:active, .register-button:active {
+  background-color: #1abc9c;
+}
+
+.register-button {
+  background-color: #f1c40f;
+}
+
+.register-button:hover {
+  background-color: #f7dc6f;
+}
+
+.register-button:active {
+  background-color: #f2c464;
+}
+
+.welcome-text{
+    font-family: Arial, sans-serif;
+    font-size: 1.5vw;
+    color: #07a9e9;
+    text-align: left;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+.welcome-text:hover {
+    color: #f1c40f;
+    
+}
