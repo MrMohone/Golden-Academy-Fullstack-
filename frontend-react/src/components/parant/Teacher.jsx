@@ -1,10 +1,10 @@
 import React from 'react'
 
-const ParentProfile = () => {
+const Teacher = () => {
   return (
     <>
-     <h2 class="mb-4 text-center">Parent Dashboard</h2>
-     <div class="container-fluid  my-2  border width-100 height-100 bg-light-dark text-start justify-content-center p-3 rounded shadow">
+     <h1 class="text-center text-success fw-bold">Teacher Dashboard</h1>
+     <div class="border mt-4">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque earum laborum obcaecati fugit necessitatibus deleniti aperiam expedita possimus, voluptatem corrupti tempore voluptas est voluptates ipsam hic praesentium error placeat esse?
           Asperiores nihil, culpa tenetur error laudantium minima laborum exercitationem suscipit consectetur dicta adipisci quisquam libero ullam mollitia iste quia deserunt doloribus magni. Ipsum quaerat tempora animi repellendus porro. Repellendus, omnis?
           Tempora soluta earum molestias sed nisi unde nihil voluptate aliquid. Neque assumenda necessitatibus minima alias nemo eaque perspiciatis repellat tempora, repudiandae ex tenetur harum in placeat ab impedit voluptates sed!
@@ -18,4 +18,4 @@ const ParentProfile = () => {
   )
 }
 
-export default ParentProfile
+export default Teacher

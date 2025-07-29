@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <>
     <nav className="navbar container py-3 align-items-start">
-      <Link className='navbar-brand text-light logo-text' to='/' >Golden Academy</Link>
+      <Link className='navbar-brand text-light logo-text' to='/' >Mandela Academy</Link>
       <div>
         {isLoggedIn ? (
           <>
