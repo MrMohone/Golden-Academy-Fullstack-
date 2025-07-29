@@ -9,6 +9,9 @@ import AuthProvider from './AuthProvider'
 import Dashboard from './components/dashboard/Dashboard'
 import PrivateRoute from './PrivateRoute'
 import PublicRoute from './PublicRoute'
+import MainParentPage from './components/parant/MainParentPage'
+
+
 
 
 function App() {
@@ -23,6 +26,7 @@ function App() {
             <Route path='/register' element={<PublicRoute><Register /></PublicRoute>}/>
             <Route path='/login' element={<PublicRoute><Login /></PublicRoute>}/>
             <Route path='/dashboard' element={<PrivateRoute><Dashboard /></PrivateRoute>}/>  {/* available for only logged in users  */}
+            <Route path='/parent' element={<MainParentPage />} />
           </Routes>
         <Footer />
       </BrowserRouter>

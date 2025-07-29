@@ -62,7 +62,7 @@ const Register = () => {
             {loading ? (
               <button type='submit' className="btn btn-info d-block mx-auto" disabled> <FontAwesomeIcon icon={faSpinner} spin/>Please wait...</button>
             ):(
-              <button type='submit' className="btn btn-info d-block mx-auto register-button">Register</button>
+              <button type='submit' className="gradient-2 d-block mx-auto register-button">Register</button>
               )}
           </form>
         </div>

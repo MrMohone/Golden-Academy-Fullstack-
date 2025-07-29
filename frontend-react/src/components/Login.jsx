@@ -58,7 +58,7 @@ const Login = () => {
                 {loading ? (
                   <button type='submit' className="btn btn-info d-block mx-auto" disabled> <FontAwesomeIcon icon={faSpinner} spin/>Logging in...</button>
                 ):(
-                  <button type='submit' className="btn btn-info d-block mx-auto login-button">Login</button>
+                  <button type='submit' className="btn gradient-2 d-block mx-auto login-button">Login</button>
                   )}
               </form>
             </div>

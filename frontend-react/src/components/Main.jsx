@@ -14,7 +14,7 @@ Golden Academy is committed to providing a world-class education to our students
 Our school management system is designed to make it easy for students, parents,
  and staff to stay connected and manage day-to-day activities.</h3> <br />
        <h3 className='text-light mb-3'>Login or Register to Get Started</h3>
-       <Button text='Explore Now' class='btn-outline-info' url='/dashboard'/>
+       <Button text='Explore Now' class='gradient-2' url='/dashboard'/>
     </div>
    </div>
    </>

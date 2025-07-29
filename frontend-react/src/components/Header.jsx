@@ -24,15 +24,15 @@ const Header = () => {
       <div>
         {isLoggedIn ? (
           <>
-          <Button text='Dashboard' class='btn-info' url='/dashboard'/>
+          <Button text='Dashboard' class='gradient-2' url='/dashboard'/>
           &nbsp;
           <button className='text-light btn btn-danger' onClick={handleLogout}>Logout</button>
 
           </>        ) : (
           <>
-          <Button text='Login' class='btn-outline-info login-button' url='/login'/>
+          <Button text='Login' class='gradient-2 login-button' url='/login'/>
           &nbsp;
-          <Button text='Register' class='btn-info register-button' url='/register'/> 
+          <Button text='Register' class='gradient-2 register-button' url='/register'/> 
           </>  
         )}
         

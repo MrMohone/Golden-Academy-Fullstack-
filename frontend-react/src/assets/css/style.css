@@ -1,5 +1,6 @@
 body{
     background-color: #212529;
+    color: white
 }
 .bg-light-dark{
     background-color: #2B3035;
@@ -12,66 +13,53 @@ body{
 .container{
     flex: 1;
 }
+/* Logo */
 .logo-text {
-  font-family: Arial, sans-serif;
-  font-size: 2.5vw;
-  font-weight: bold;
-  background: linear-gradient(to right, #3498db, #f1c40f); /* linear gradient background */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin: 0;
-  padding: 0;
-  animation: logo-anim 2s infinite;
-}
+    font-size: 4vw;
+    font-weight: 800;
+    background: linear-gradient(90deg, #ff6a00, #ee0979, #6f42c1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    display: inline-block;
+    transition: all 0.4s ease;
+    animation: fadeIn 1s ease;
+    text-align: center;
+  }
+.logo-text::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: #ee0979;
+    transition: width 0.3s ease;
+  }
+.logo-text::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: #ee0979;
+    transition: width 0.3s ease;
+  }
 
-@keyframes logo-anim {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  20% {
-    transform: scale(1.1);
-    opacity: 0.8;
-  }
-  40% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  60% {
-    transform: scale(0.9);
-    opacity: 0.7;
-  }
-  80% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.05);
-    opacity: 0.9;
-  }
-}
-
-.logo-text:hover {
-  animation: logo-anim-hover 0.5s infinite;
-}
-
-@keyframes logo-anim-hover {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.05);
-    opacity: 0.9;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
+.logo-text:hover::after {
+      width: 100%;
+    }
+@keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 8vw;
   }
 }
-
+/* CSS for Login and Register buttons */
 .login-button, .register-button {
   font-family: Arial, sans-serif;
   font-size: 16px;
@@ -116,4 +104,52 @@ body{
 .welcome-text:hover {
     color: #f1c40f;
     
+}
+.animated-hr {
+  border: none;
+  border-top: 5px solid #ccc;
+  width: 90vw; /* 90% of screen width */
+  margin: 0 auto; /* Center horizontally */
+  animation: animate-hr 3s infinite;
+}
+
+@keyframes animate-hr {
+  0% {
+    border-top-color: #09c6f5;
+  }
+  50% {
+    border-top-color: #666;
+  }
+  100% {
+    border-top-color: #ccc;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .animated-hr {
+    width: 80vw; /* 80% of screen width on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .animated-hr {
+    width: 70vw; /* 70% of screen width on even smaller screens */
+  }
+}
+
+/* Buttons */
+.gradient-2 {
+      background: linear-gradient(135deg, #43cea2, #185a9d);
+      color: white;
+    }
+ 
+.dashboard-card {
+transition: 0.3s;
+border: none;
+border-radius: 16px;
+}
+.dashboard-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
 }
